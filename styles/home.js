@@ -1,8 +1,7 @@
-import { motion } from "framer-motion"
 import styled from "styled-components"
 
-const Title = styled(motion.h1)`
-    font-size: 2rem;
+const Title = styled.h1`
+    font-size: 2.25rem;
     color: #13071D;
     text-align: center;
     font-weight: 800;
@@ -14,10 +13,11 @@ const Main = styled.main`
     place-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: 0.15fr 0.15fr 0.7fr;
+    row-gap: 1rem;
 
 `
 
-const Form = styled(motion.form)`
+const Form = styled.form`
     width: calc(100% / 3.5);
     min-width: 18.75rem;
     height: 4.5rem;
@@ -56,37 +56,12 @@ const Form = styled(motion.form)`
     }
 `
 
-const Table = styled(motion.div)`
-    min-width: 18.75rem;
-    max-width: 50rem;
-    width: 80%;
-    min-height: 22.5rem;
-    border: 1px solid #D1D1E1;
-    border-radius: 1.25rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 1rem 0;
 
-    & div:first-of-type{
-        width: 100%;
 
-    }
-
-`
-const TableHeader = styled.ul`
-    display: flex;
-    list-style-type: none;
-    position: relative;
-    justify-content: space-around;
-    width: 100%;
-    
-`
 
 export {
     Title,
     Main,
     Form,
-    Table,
-    TableHeader
+
 }

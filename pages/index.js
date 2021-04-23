@@ -1,5 +1,7 @@
-import TableFilter from "../components/TableFilter"
-import { Form, Main, Title, Table, TableHeader } from "../styles/home"
+import Table from "../components/Table"
+import { Form, Main, Title } from "../styles/home"
+import { FiSearch } from 'react-icons/fi'
+
 
 export default function Home() {
   return (
@@ -9,6 +11,7 @@ export default function Home() {
         exchange networks
       </Title>
       <Form>
+        <FiSearch size="1.25rem" color="#462065" />
         <input
           type="text"
           placeholder="Write name or symbol"
@@ -19,11 +22,7 @@ export default function Home() {
           Search
         </button>
       </Form>
-      <Table>
-        <TableFilter />
-        <TableHeader >
-        </TableHeader>
-      </Table>
+      <Table />
     </Main>
   )
 }
